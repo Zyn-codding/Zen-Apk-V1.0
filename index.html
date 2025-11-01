@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZEN APK V1.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <div class="glass" id="loginBox">
+    <h1>ZEN APK V1.0</h1>
+    <div class="subtitle">CREATED BY DEBB</div>
+
+    <label>USERNAME</label>
+    <input id="username" type="text" placeholder="Masukkan username" autocomplete="off" />
+
+    <label style="margin-top:10px">PASSWORD</label>
+    <input id="password" type="password" placeholder="Masukkan password" />
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px">
+      <button class="btn" id="loginBtn">LOGIN</button>
+      <div class="small">Version <strong>ZEN APK V1.0</strong></div>
+    </div>
+
+    <div class="meta">Akun: [ DEBB / DEBB001 ] atau [ Rakha / Rakha123 ]</div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="glass hidden" id="mainBox">
+    <div class="center">
+      <div class="big-title">「ようこそ、危険な人間。🔥」</div>
+      <div class="muted" id="roleTxt">Role : Members</div>
+
+      <label style="width:100%;text-align:left">TARGET (example)</label>
+      <input id="targetInput" type="text" placeholder="contoh: 62812xxxx..." />
+
+      <label style="width:100%;text-align:left;margin-top:6px">MENU BUG</label>
+      <select id="menuBug">
+        <option value="">Menu Bug</option>
+        <option value="BUG_A">BUG A</option>
+        <option value="BUG_B">BUG B</option>
+        <option value="BUG_C">BUG C</option>
+      </select>
+
+      <div class="row" style="width:100%;margin-top:8px">
+        <button class="btn" id="sendBtn" style="flex:1">SEND</button>
+        <button class="btn" id="devBtn" style="flex:0.6">Developer</button>
+      </div>
+
+      <button class="btn logout" id="logoutBtn">LOGOUT</button>
+      <div class="credits">CREATED BY DEBB · ZEN APK V1.0</div>
+    </div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <h3 id="modalTitle">Notice</h3>
+    <p id="modalMsg">Message</p>
+    <div style="text-align:right"><button class="ok" id="modalOk">OK</button></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
