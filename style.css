@@ -1,0 +1,54 @@
+:root{
+  --bg:#0b0b0f;
+  --accent:#9b5eff;
+  --muted:#9aa0a6;
+  --neon:0 0 18px rgba(155,94,255,.35),0 0 36px rgba(155,94,255,.12);
+  font-family:'Poppins',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  background:radial-gradient(ellipse at 10% 10%,rgba(155,94,255,0.08),transparent 10%),var(--bg);
+  color:#eee;
+}
+.glass{
+  width:350px;padding:28px;border-radius:16px;
+  background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+  border:1px solid rgba(155,94,255,.08);box-shadow:0 8px 30px rgba(0,0,0,.7);
+}
+h1{margin:0 0 8px;font-size:20px}
+.subtitle{font-size:12px;color:var(--muted);margin-bottom:18px}
+label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px}
+input,select{
+  width:100%;padding:10px 12px;border-radius:10px;background:transparent;
+  border:1px solid rgba(155,94,255,.12);color:#fff;outline:none;
+}
+.btn{
+  display:inline-block;padding:10px 16px;border-radius:10px;border:0;
+  background:linear-gradient(90deg,var(--accent),#6b3bff);color:#fff;cursor:pointer;
+  font-weight:600;box-shadow:var(--neon);margin-top:12px;
+}
+.logout{
+  background:transparent;border:1px solid rgba(155,94,255,.14);box-shadow:none;color:var(--accent);margin-top:8px;
+}
+.row{display:flex;gap:8px}
+.small{font-size:12px;color:var(--muted);margin-top:8px}
+.meta{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
+.hidden{display:none}
+.center{display:flex;flex-direction:column;gap:12px;align-items:center}
+.big-title{font-size:20px;text-align:center}
+.muted{color:var(--muted);font-size:13px}
+.credits{font-size:11px;color:var(--muted);margin-top:8px}
+.modal{
+  position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.95);
+  background:#111;border-radius:12px;padding:18px 20px;
+  border:1px solid rgba(155,94,255,.2);box-shadow:0 10px 40px rgba(0,0,0,.6);
+  opacity:0;pointer-events:none;transition:.2s;
+}
+.modal.show{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.modal h3{margin:0 0 8px;color:var(--accent)}
+.modal p{margin:0 0 12px}
+.modal .ok{
+  background:linear-gradient(90deg,var(--accent),#6b3bff);
+  color:#fff;border:0;padding:8px 12px;border-radius:8px;
+    }
